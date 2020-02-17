@@ -1,0 +1,68 @@
+body {
+    flex-basis: 100%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(10, 106, 170, 0.918);
+}
+h1 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+.billForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    max-width: 450px;
+}
+.billForm >* {
+    margin: 5px;
+}
+label:first-of-type {
+    flex-basis: 25%;
+    order: 1;
+}
+input:first-of-type {
+    flex-basis: 70%;
+    order: 1;
+}
+input[type=number] {
+    border-radius: 8px;
+    border: solid gray 1px;
+    padding: 8px 8px;
+    box-sizing: content-box;
+}
+label, input {
+    flex-basis: 20%;
+    order: 3;
+}
+#output-group {
+    flex-basis: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+}
+#output-group >* {
+    padding: 4px 0;
+    flex-basis: 45%;
+    flex-wrap: wrap;
+}
+input[type=submit] {
+    flex-basis: 100%;
+    border: none;
+    font-size: 24px;
+    color: #0854f8;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(12, 8, 19);
+    color: white;
+    text-align: center;
+  }
+
+
