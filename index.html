@@ -3,6 +3,7 @@
 
 <head>
     <title>Maitre D</title>
+    <link rel="icon" href="calc.png" type="image/x-icon">
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styling.css">
     <script src="chandu.js"></script>
@@ -10,27 +11,27 @@
 
 <body>
     <main>
-    <h1>Maitre D</h1>
-    <div class="billForm" name="billForm" id="billForm">
-        <label>Total: </label><input type="number" name="total" placeholder="Enter the total amount" id="total">
-        <label >Rate: </label><input type="number" step="0.01" min="0" max="1" name="rate" placeholder="Enter tip"
-            style="height: 20px; width: 20px;" id="rate">
-        <div id="output-group">
-            <div class="outputLabel">Tip: </div>
-            <div class="outputText" id="tip">$0</div>
-            <div class="outputLabel">Tax: </div>
-            <div class="outputText" id="tax">$0</div>
-            <div class="outputLabel">Grand Total: </div>
-            <div class="outputText" id="grandtotal">$0</div>
-        </div>
-        <input type="submit" value="Calculate" name="submit" onclick="calculate()">
-        
-        <div class="footer">
-            <p>&copy;Chandrakanth Polisetty</p>
-          </div>
-        </form>
-        
-        
+        <h1>Maitre D</h1>
+        <div class="billForm" name="billForm" id="billForm">
+            <label>Total: </label><input type="number" name="total" placeholder="Enter the total amount" id="total">
+            <label>Rate: </label><input type="number" step="0.01" min="0" max="1" name="rate" placeholder="Enter tip"
+                style="height: 20px; width: 20px;" id="rate">
+            <div id="output-group">
+                <div class="outputLabel">Tip: </div>
+                <div class="outputText" id="tip">$0</div>
+                <div class="outputLabel">Tax: </div>
+                <div class="outputText" id="tax">$0</div>
+                <div class="outputLabel">Grand Total: </div>
+                <div class="outputText" id="grandtotal">$0</div>
+            </div>
+            <input type="submit" value="Calculate" name="submit" onclick="calculate()">
+
+            <div class="footer">
+                <p>&copy;Chandrakanth Polisetty</p>
+            </div>
+            </form>
+
+
 
 </body>
 
