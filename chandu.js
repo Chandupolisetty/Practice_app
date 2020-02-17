@@ -1,12 +1,14 @@
-function calculate(){
-    let total = parseFloat(document.getElementById("total").value);
+function calculate() {
+    total = document.getElementById("total").value;
     console.log(typeof total);
-    let rate = parseFloat(document.getElementById("rate").value);
-    if (total == "" || rate == ""){
-        alert("hey dummy you forgot something");
+    rate = parseFloat(document.getElementById("rate").value)
+    if (total && rate != 0) {
+        document.getElementById("tip").innerHTML = "$" + total * (rate / 100);
+        document.getElementById("tax").innerHTML = "$" + total * 0.055;
+        document.getElementById("grandtotal").innerHTML = "$" + ( parseInt(total) + parseInt(total * (rate / 100)) + parseFloat(total * 0.055));
+    }else{
+        alert("Enter correct values")
     }
-    document.getElementById("tip").innerHTML = "$" + total*(rate/100);
-    document.getElementById("tax").innerHTML = "$" + total*0.055;
-    document.getElementById("grandtotal").innerHTML = "$" + (total + total*(rate/100) + (total*0.055));
+  
     return false;
 }
